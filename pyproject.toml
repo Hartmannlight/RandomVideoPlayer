@@ -1,17 +1,23 @@
-[tool.poetry]
+[project]
 name = "randomvideoplayer"
-version = "0.1.0"
-description = "Random video player with GUI and mpv integration"
-authors = ["Nathaniel Hartmann <nathaniel.hartmann@partner.kit.edu>"]
+version = "0.2.0"
+description = "Random WebM video player GUI that uses mpv for seamless shuffled playback over very large collections."
+authors = [
+    { name = "Nathaniel Hartmann", email = "nathaniel.hartmann@partner.kit.edu" }
+]
 readme = "README.md"
-packages = [{ include = "randomvideoplayer" }]
+requires-python = ">=3.13"
+dependencies = [
+]
 
-[tool.poetry.dependencies]
-python = ">=3.13,<4.0"
-
-[tool.poetry.scripts]
+[project.gui-scripts]
 randomvideoplayer = "randomvideoplayer.__main__:main"
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+packages = [
+    { include = "randomvideoplayer" }
+]
