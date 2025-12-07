@@ -1,7 +1,3 @@
-Hier ist eine **kurze** Version:
-
----
-
 # RandomVideoPlayer
 
 RandomVideoPlayer is a small Windows app that plays all videos from a selected folder in random order.
