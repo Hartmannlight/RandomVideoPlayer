@@ -34,13 +34,7 @@ jobs:
         run: poetry run python -m pip install pyinstaller
 
       - name: Build Windows executable with PyInstaller
-        run: |
-          poetry run pyinstaller ^
-            --noconfirm ^
-            --noconsole ^
-            --onefile ^
-            --name RandomVideoPlayer ^
-            run_randomvideoplayer.py
+        run: poetry run pyinstaller --noconfirm --noconsole --onefile --name RandomVideoPlayer run_randomvideoplayer.py
 
       - name: Upload executable as workflow artifact
         uses: actions/upload-artifact@v4
