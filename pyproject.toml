@@ -1,6 +1,6 @@
 [project]
 name = "randomvideoplayer"
-version = "0.2.0"
+version = "0.3.0"
 description = "Random WebM video player GUI that uses mpv for seamless shuffled playback over very large collections."
 authors = [
     { name = "Nathaniel Hartmann", email = "nathaniel.hartmann@partner.kit.edu" }
